@@ -1,7 +1,8 @@
+## As informações que vão alimentar nossa análise, foram extraídas  do site Kaggle link Os dados são referentes a clientes serviços  de telecomunicações e seus hábitos de consumo, produtos, etc
 
-# Analisando o banco de dados de uma telecom com pandas
 ### Analise de dados, tratamentos de dados grafico em python tabelas(DataFrames)
 ### Machine learning e pyplot no jupyter notbook
+
 # passo 1: Importa a base de dados
 #### Inportando a biblioteca pandas 
 - import pandas as pd
@@ -143,31 +144,74 @@
 - grafico.show()
 <img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Meses%20como%20cliente.png?raw=true" />	
 
-#### No segundo mostra o grafico de todas as tabelas
-#### ao colocar dentro do "for" ele percorre todas as colunas das tabelas
+#### em apenas um for conseguimos criar todos os gráficos disponíveis Além disso, podemos perceber que os dados que possuem valor da coluna Churn como “YES", são representados em uma cor distinta aos clientes Isso também era esperado visto  a parametrização color=‘ Churn
+#### Assim, temos vários outros gráficos que nos permitem analisar de maneira mais profunda o nosso problema Boa parte do problema daqui para a frente é muito mais uma questão de análise de dados do que Python propriamente dita Vamos para os destaques da análise
 
 - for coluna in tabela:
 - grafico = px.histogram(tabela, x=coluna, color="Churn")
 - grafico.show()
+- 
+### Genero
 <img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(1).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(11).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(12).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(14).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(15).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(16).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(18).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(19).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(5).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(8).png?raw=true"/>
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(17).png?raw=true"/>  
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(10).png?raw=true"/> 
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(13).png?raw=true"/> 
-<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(3).png?raw=true"/> <img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(6).png?raw=true"/> 
 
-# Projeto
-#### o desafio é conseguir prever as vendas que vamos ter em determinado periodo com 
-#### base nos gastos em anúcios nas 3 grandes redes que a empresa investe: tv jornal e radio
-#### Ciencias de dados, analise exploratoria, inteligencia artificial, analise de modelos
+### Proteção e equipamentos
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(11).png?raw=true"/>
+
+### Serviço suport técnico
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(12).png?raw=true"/>
+
+### Tipos de contratos 
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(14).png?raw=true"/>
+
+### faturas digitais
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(15).png?raw=true"/>
+
+#### Análise
+- Os métodos automáticos tem uma taxa de churn menor 
+#### Insights
+- O Eletronic Check possui resultado muito ruim Se possível evitar Ideia oferecer benefícios caso a pessoa escolha um método automático
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(16).png?raw=true"/>
+
+### Total de gastos
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(18).png?raw=true"/>
+
+### Cancelamentos
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(19).png?raw=true"/>
+
+#### Análise 
+- Proporção de Cancelamento Alta para valores de Tenure baixo 
+#### Insights 
+- Baixa qualidade no atendimento do pós venda 1 ª experiência com o cliente não é boa Captação de clientes falha  clientes desqualificados expectativas erradas ao adquirir o produto
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(5).png?raw=true"/>
+
+#### Análise
+- Clientes que NÃO possuem serviços adicionais de Suporte Técnico, Proteção a dispositivos e Segurança Online tendem a cancelar mais
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(8).png?raw=true"/>
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(9).png?raw=true"/>
+### Insights
+- Todos os itens em algum nível falam sobre aumentar a confiabilidade/disponibilidade do serviço recebido pelo cliente
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(10).png?raw=true"/>
+
+
+#### Análise
+- Contrato Mensal com taxa de cancelamento MUITO superior aos demais métodos de pagamento
+#### Insights
+- Melhorar as condições comerciais dos planos anuais para direcionar a pessoa para estes casos
+<img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(14).png?raw=true"/> 
+
+# 
+-
+#
+
+# As informações que vão alimentar o nosso código, serão dados dos investimentos em propaganda em diferentes canais e as vendas decorrentes desses investimentos"
+- TV
+- Jornal
+- Radio
+
+### Introdução Entendendo a base de dados Vendas 
+#### Portanto, para um melhor entendimento, na primeira linha temos os 3 meios de comunicação que a Hashtag usa para vender ( Radio, Jornal) e o último item ( representa a quantidade em vendas resultante desses canais Usando a segunda linha como exemplo temos que investindo 230 1 kBRL no Canal TV 37 8 kBRL no Canal Radio 69 2 kBRL no Canal Jornal foi gerada uma Venda de 22 1 MBRL
+
+#### o desafio é conseguir prever as vendas que vamos ter em determinado periodo com  base nos gastos em anúcios nas 3 grandes redes que a empresa investe: tv jornal e radio Ciencias de dados, analise exploratoria, inteligencia artificial, analise de modelos
 
 - import pandas as pd 
 - tabela = pd.read_csv("advertising.csv")
@@ -198,11 +242,17 @@
 - sns.pairplot(tabela)
 - plt.show
 
+#### Tivemos alguns direcionadores do que pode estar acontecendo, mas não faz muito sentido ficarmos avaliando os pontos 1 a 1 no olho Vamos usar outro método da biblioteca seaborn para conseguirmos avaliar melhor esses dados Este método é o heatmap Aqui, vamos usar alguns argumentos dentro do método Argumentos são essencialmente configurações que o método deverá seguir ao ser executado Vamos entende los um pouco melhor • df corr esse argumento indica o que está sendo plotado Nesse caso, df corr indica que será calculado a CORRELAÇÃO entre os dados do dataframe df que é uma • cmap Wistia ’’-->indica a paleta de cores a ser utilizada no gráfico • annot Escreve dentro dos quadrados o valor
 <img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/informa%C3%A7oes.png?raw=true"/>
+
+#### Achou estranho com apenas 2 linhas gerar o que parecem ser 16 gráficos diferentes? Legal né? Aqui usamos um gráfico de dispersão para cada uma das combinações de colunas possíveis Isso nos permite perceber se existem alguma relação entre elas Alguns casos, serão úteis, outros, não Alguns nem sentido farão Saber diferenciar isso e entender o que está acontecendo é uma peça chave para um bom resultado no fim do processo Lembre se por enquanto estamos em uma ANÁLISE EXPLORATÓRIA! Estamos mais buscando caminhos do que grandes conclusões  Vamos pegar 2 dos 16 gráficos para entende los um pouco melhor
 <img height="200" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Correla%C3%A7%C3%A3o.png?raw=true"/>
 
 # separando em dados de treino e dados de teste
-#### from sklearn.model_selection import train_test_split
+
+#### Vamos agora para fase de criação de um modelo O que precisamos identificar são • Os inputs do modelo (eixo X) • Os outputs do modelo (eixo Y) Lembrando que nosso objetivo é criar um modelo de previsão de vendas baseado nos dados de investimento nos diferentes canais ( radio, jornais) Ou seja, nossos inputs são valor do investimento nos diferentes canais e nosso output será a venda prevista dado os inputs informados Vamos iniciar este bloco de código informando exatamente isso Usaremos para essa etapa uma nova biblioteca E como sempre, vamos precisar importa las
+
+- from sklearn.model_selection import train_test_split
 - y = tabela["Vendas"]
 - x = tabela.drop("Vendas", axis=1)
 #### Criando as variaveis de treino e de texte 
@@ -239,16 +289,23 @@
 - tabela_auxiliar = pd.DataFrame()
 - tabela_auxiliar["y_teste"] =y_teste
 - tabela_auxiliar["previsao ArvoresDecisão"] = previsao_arvoredecisao
+
 - tabela_auxiliar["previsao Regressao Linear"] = previsao_regressaolinear
 # PLotando o grafico
 - plt.figure(figsize=(15,5))
 - sns.lineplot(data=tabela_auxiliar)
 - plt.show()
 
+#### O gráfico ao lado mostra todos os 60 pontos de teste que são dados reais extraídos da nossa base ao lado das duas curvas geradas pelos nossos modelos A linha azul representa os dados reais de teste A linha tracejada laranja representa os dados de previsão calculados pelo modelo de Random Forest A linha verde tracejada representa os dados de previsão calculados pelo modelo de Regressão Linear Perceba que após a elaboração dos testes, utilizamos novamente o Pandas para criar um dataframe apenas com os resultados calculados e os dados de teste 
+
+- *lembrando que tínhamos 200 pontos e definimos
+- 30% para teste, logo 0,3X200 = 60
 <img height="200" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/download.png?raw=true"/>
 
 # esse grafico mostra quem é mais importante da base de dados 
 - sns.barplot (x=x_treino.columns, y=modelo_arvoresdecisao.feature_importances_)
 - plt.show() 
+
+### Lembra que na fase exploratória percebemos que o investimento em TV era o que possuía maior correlação com as vendas? Será que nosso modelo possui a mesma característica? Utilizando novamente nosso pandas e seaborn para auxiliar na elaboração do gráfico, podemos perceber que em termos de importância para o modelo via Random Forest • O investimento em TV é 85 relevante • O Rádio que também avaliamos anteriormente, pouco mais de 10 • Jornal não chegando a mais de 5 de relevância 
 
 <img height="200" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Dados_final.png?raw=true"/>
