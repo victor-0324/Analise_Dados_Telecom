@@ -1,5 +1,5 @@
 
-# A nalisando o banco de dados de uma telecom com pandas
+# Analisando o banco de dados de uma telecom com pandas
 ### Analise de dados, tratamentos de dados grafico em python tabelas(DataFrames)
 ### Machine learning e pyplot no jupyter notbook
 # passo 1: Importa a base de dados
