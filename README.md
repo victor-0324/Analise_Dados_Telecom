@@ -1,3 +1,5 @@
+<img src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Desenvolvimento%20de%20projetos%20de%20DATA%20SCIENCE_large.jpg?raw=true" alt="image" />
+
 ## As informações que vão alimentar nossa análise, foram extraídas  do site Kaggle link Os dados são referentes a clientes serviços  de telecomunicações e seus hábitos de consumo, produtos, etc
 
 ### Analise de dados, tratamentos de dados grafico em python tabelas(DataFrames)
