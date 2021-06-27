@@ -1,4 +1,4 @@
-<img src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Desenvolvimento%20de%20projetos%20de%20DATA%20SCIENCE_large.jpg?raw=true" alt="image" />
+<img src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/datascience-docu.jpg?raw=true" alt="image" />
 
 ## As informações que vão alimentar nossa análise, foram extraídas  do site Kaggle link Os dados são referentes a clientes serviços  de telecomunicações e seus hábitos de consumo, produtos, etc
 
@@ -311,3 +311,5 @@
 ### Lembra que na fase exploratória percebemos que o investimento em TV era o que possuía maior correlação com as vendas? Será que nosso modelo possui a mesma característica? Utilizando novamente nosso pandas e seaborn para auxiliar na elaboração do gráfico, podemos perceber que em termos de importância para o modelo via Random Forest • O investimento em TV é 85 relevante • O Rádio que também avaliamos anteriormente, pouco mais de 10 • Jornal não chegando a mais de 5 de relevância 
 
 <img height="200" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Dados_final.png?raw=true"/>
+
+<img src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Desenvolvimento%20de%20projetos%20de%20DATA%20SCIENCE_large.jpg?raw=true" alt="image" />
