@@ -312,4 +312,5 @@
 
 <img height="200" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Dados_final.png?raw=true"/>
 
-<img src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/Desenvolvimento%20de%20projetos%20de%20DATA%20SCIENCE_large.jpg?raw=true" alt="image" />
+                                  
+##### >>>                                                          THE END                                                               <<<
