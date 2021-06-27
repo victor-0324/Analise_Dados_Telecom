@@ -53,7 +53,7 @@ for coluna in tabela:
 #Ciencias de dados, analise exploratoria, inteligencia artificial, analise de modelos
 import pandas as pd 
 
-tabela = pd.read_csv("advertising.csv")
+tabela = pd.read_csv("Dados/advertising.csv")
 display(tabela)
 
 
