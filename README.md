@@ -29,7 +29,7 @@
 		5986 rows × 23 columns
 
 # passo 3: Coluna unnamed é inutil 
-- Dropando a coluna Unannamed 0, (axis=1) exclui todas as linhas da coluna.
+#### Dropando a coluna Unannamed 0, (axis=1) exclui todas as linhas da coluna.
 
 - tabela = tabela.drop("Unnamed: 0", axis=1)  
 - display(tabela)
@@ -124,15 +124,14 @@
 # passo 4: como esta os nossos cancelamentos
 #### Contando o total de cancelamento
 - display(tabela["Churn"].value_counts())
-	Nao    4398
-	Sim    1587
-	Name: Churn, dtype: int64
+
+		Nao    4398
+		Sim    1587
+		Name: Churn, dtype: int64		
+			
 #### em percentual
 - display(tabela["Churn"].value_counts(normalize=True).map("{:.1%}".format))
 
-	    Nao    4387
-	    Sim    1587
-	    Name: Churn, dtype: int64
 	    Nao    73.4%
 	    Sim    26.6%
 	    Name: Churn, dtype: object
@@ -152,7 +151,7 @@
 - for coluna in tabela:
 - grafico = px.histogram(tabela, x=coluna, color="Churn")
 - grafico.show()
-- 
+ 
 ### Genero
 <img height="150" src="https://github.com/victor-0324/Analise_Dados_Telecom/blob/main/Graficos%20do%20projeto/newplot%20(1).png?raw=true"/>
 
